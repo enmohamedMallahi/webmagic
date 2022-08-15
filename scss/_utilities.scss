@@ -1,0 +1,30 @@
+.splite {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+	.splite {
+		flex-direction: column;
+	}
+}
+
+.btn {
+	background-color: #00c851;
+	color: #fff;
+	padding: 1rem;
+	border: 0;
+	outline: 0;
+
+	i {
+		margin-right: 0.2rem;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.8;
+		transform: scale(1.03);
+	}
+}

@@ -1,0 +1,139 @@
+@import 'utilities';
+
+body {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	color: #2c3e50;
+	font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.7rem 4rem;
+	background-color: #3498db;
+	color: #fff;
+
+	&-brand {
+		font-weight: bold;
+	}
+
+	&-menu {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style: none;
+
+		li {
+			margin-left: 1rem;
+		}
+
+		a {
+			transition: color 0.3s ease;
+			color: #fff;
+			text-decoration: none;
+			&:hover {
+				color: yellow;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.showcase {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 4rem;
+	background-color: #3498db;
+	color: #fff;
+	min-height: 70vh;
+	// border: 1px 	 red;
+
+	&-text {
+		flex: 1;
+		// border: 1px solid red;
+
+		h1 {
+			font-size: 3rem;
+			text-transform: capitalize;
+			text-shadow: 1px 1px rgb(145, 93, 93);
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
+	}
+
+	&-image {
+		flex: 1;
+		// border: 1px solid red;
+
+		img {
+			width: 75%;
+		}
+	}
+}
+
+// Sections Layout
+
+section {
+	padding: 1rem 4rem;
+
+	h1 {
+		text-align: center;
+		font-size: 2rem;
+	}
+}
+
+// Services
+.service {
+	text-align: center;
+
+	i {
+		font-size: 3rem;
+	}
+}
+
+// About Us
+.about {
+	// text-align: justify;
+}
+
+// Call-To-Action
+.cta {
+	background-color: #3498db;
+	color: #fff;
+	text-align: center;
+
+	p {
+		font-size: 1.6rem;
+	}
+}
+
+// Footer
+footer {
+	text-align: center;
+	padding: 2rem;
+}
+
+// Responsive
+@media screen and (max-width: 700px) {
+	.navbar,
+	section {
+		padding: 1rem 2rem;
+	}
+
+	.showcase {
+		flex-direction: column;
+		text-align: center;
+	}
+}
